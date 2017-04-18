@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ededed"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="#6bb9f9"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额 (元)"
+            android:textColor="#c2c1c1"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="1000.00"
+            android:textColor="#ffffff"
+            android:textSize="36dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#33c2c2c2">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_tixian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rv_color="#bef2f9"
+            app:rv_zoom="true"
+            >
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="提现"
+                android:textColor="#0e0e0e"
+                android:textSize="22dp"/>
+        </com.andexert.library.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#838383"/>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_mingxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rv_color="#a3e5ed"
+            app:rv_zoom="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="账户明细"
+                android:textColor="#0e0e0e"
+                android:textSize="22dp"/>
+        </com.andexert.library.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b7b7b7"/>
+    </LinearLayout>
+</LinearLayout>
